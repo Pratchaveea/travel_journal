@@ -1,8 +1,8 @@
 class TripsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
-  
+
   def index
-    @trips = Trip.all
+    @trip = Trip.all
   end
 
   def show
